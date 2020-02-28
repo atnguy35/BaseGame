@@ -1,8 +1,8 @@
 let game;
 
 let gameOptions = {
-  gravity: 1,
-  maxItemsPerLevel: 30,
+  gravity: 2,
+  maxItemsPerLevel: 45,
   maxIterations: 10,
   minItemsDistance: 160
 }
@@ -10,6 +10,9 @@ let gameOptions = {
 const HERO = 0;
 const COIN = 1;
 const SKULL = 2;
+const DIAMOND = 1;
+const Emerald = 1;
+const Ruby = 1;
 
 window.onload = function() {
   let gameConfig = {
@@ -20,7 +23,7 @@ window.onload = function() {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
       parent: "thegame",
-      width: 750,
+      width: 1000,
       height: 1334
     },
     
@@ -48,7 +51,7 @@ class playGame extends Phaser.Scene{
   }
   
   preload() {
-    this.load.spritesheet("items", "Art/items.png", {
+    this.load.spritesheet("items", "Art/Newitems.png", {
       frameWidth: 128,
       frameHeight: 128
     });
