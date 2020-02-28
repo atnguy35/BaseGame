@@ -51,7 +51,7 @@ class playGame extends Phaser.Scene{
   }
   
   preload() {
-    this.load.spritesheet("items", "Art/Newitems.png", {
+    this.load.spritesheet("items", "Art/NewItems.png", {
       frameWidth: 128,
       frameHeight: 128
     });
